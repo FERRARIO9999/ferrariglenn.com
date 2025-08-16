@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ferrari Glenn — Creative Tech Portfolio</title>
+  <meta name="description" content="LED projects, audio, art, code, and research by Ferrari Glenn (Rari)." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root { color-scheme: dark; }
+    html { scroll-behavior: smooth; }
+    body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji"; }
+    .glass { background: radial-gradient(1200px 1200px at 10% -20%, rgba(120,119,198,.15), transparent 60%),
+                     radial-gradient(1200px 1200px at 90% 120%, rgba(56,189,248,.12), transparent 60%); }
+  </style>
+</head>
+<body class="bg-neutral-950 text-neutral-200">
+  <!-- Nav -->
+  <header class="sticky top-0 z-50 backdrop-blur bg-neutral-950/70 border-b border-white/5">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#home" class="font-extrabold tracking-tight text-lg">ferrariglenn<span class="text-sky-400">.com</span></a>
+      <nav class="hidden md:flex gap-6 text-sm">
+        <a href="#projects" class="hover:text-white/90">Projects</a>
+        <a href="#gallery" class="hover:text-white/90">Gallery</a>
+        <a href="#about" class="hover:text-white/90">About</a>
+        <a href="#contact" class="hover:text-white/90">Contact</a>
+      </nav>
+      <a href="#contact" class="inline-flex items-center gap-2 text-sm px-3 py-1.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10">Get in touch</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="glass relative overflow-hidden">
+    <div class="max-w-6xl mx-auto px-4 py-20 md:py-28 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">Creative tech, 
+          <span class="text-sky-400">built by Rari</span>.</h1>
+        <p class="mt-5 text-white/70 text-lg">LED systems, audio tools, art, and research. I build clean, minimal experiences with playful systems thinking.</p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="#projects" class="px-5 py-3 rounded-2xl bg-sky-500/20 border border-sky-400/30 hover:bg-sky-500/30">See projects</a>
+          <a href="#contact" class="px-5 py-3 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10">Contact</a>
+        </div>
+        <div class="mt-8 text-xs text-white/50">Powered by HTML + Tailwind. Next.js version coming soon.</div>
+      </div>
+      <div class="md:pl-8">
+        <div class="relative rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
+          <img alt="LED controller preview" src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1600&auto=format&fit=crop" class="w-full h-80 object-cover" />
+          <div class="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-black/60 to-transparent text-sm">
+            ESP32 + WLED • 10 RGB fans • JSON API tricks
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="max-w-6xl mx-auto px-4 py-20">
+    <h2 class="text-2xl md:text-3xl font-bold">Projects</h2>
+    <p class="mt-2 text-white/60">A rotating selection. More on GitHub soon.</p>
+    <div class="mt-8 grid md:grid-cols-3 gap-6">
+      <!-- LED -->
+      <article class="rounded-3xl p-5 bg-white/5 border border-white/10 hover:border-sky-400/40 transition">
+        <div class="text-xs uppercase tracking-wide text-white/50">LED</div>
+        <h3 class="mt-2 font-semibold text-lg">WLED Fan Controller</h3>
+        <p class="mt-2 text-white/70 text-sm">Custom ESP32 controller with 8 segments × 16 LEDs, real-time effects via WLED JSON API.</p>
+        <ul class="mt-3 text-xs text-white/50 list-disc list-inside">
+          <li>ESP32 • WLED • JSON</li>
+          <li>3D-printed housing</li>
+        </ul>
+      </article>
+      <!-- Audio -->
+      <article class="rounded-3xl p-5 bg-white/5 border border-white/10 hover:border-sky-400/40 transition">
+        <div class="text-xs uppercase tracking-wide text-white/50">Audio</div>
+        <h3 class="mt-2 font-semibold text-lg">MPC Studio MK2 Script</h3>
+        <p class="mt-2 text-white/70 text-sm">Enhanced FL Studio control mapping for transport, mixer, and mouse-like actions.</p>
+        <ul class="mt-3 text-xs text-white/50 list-disc list-inside">
+          <li>Python • MIDI • Windows</li>
+          <li>Lewitt LCT 441 FLEX</li>
+        </ul>
+      </article>
+      <!-- Writing/Research -->
+      <article class="rounded-3xl p-5 bg-white/5 border border-white/10 hover:border-sky-400/40 transition">
+        <div class="text-xs uppercase tracking-wide text-white/50">Writing</div>
+        <h3 class="mt-2 font-semibold text-lg">Reality as Art — Thesis</h3>
+        <p class="mt-2 text-white/70 text-sm">A book-in-progress exploring systems, perception, and creative practice; expanding each section into full chapters.</p>
+        <ul class="mt-3 text-xs text-white/50 list-disc list-inside">
+          <li>Case studies • Philosophy</li>
+          <li>Proposal in development</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="max-w-6xl mx-auto px-4 py-20">
+    <h2 class="text-2xl md:text-3xl font-bold">Gallery</h2>
+    <p class="mt-2 text-white/60">Snapshots from builds, tests, and scenes that slap.</p>
+    <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
+      <img class="rounded-2xl border border-white/10 object-cover aspect-[4/3]" src="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1600&auto=format&fit=crop" alt="Desk with RGB lighting" />
+      <img class="rounded-2xl border border-white/10 object-cover aspect-[4/3]" src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1600&auto=format&fit=crop" alt="Electronics board" />
+      <img class="rounded-2xl border border-white/10 object-cover aspect-[4/3]" src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1600&auto=format&fit=crop" alt="Soldering" />
+      <img class="rounded-2xl border border-white/10 object-cover aspect-[4/3]" src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=1600&auto=format&fit=crop" alt="Headphones" />
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="max-w-6xl mx-auto px-4 py-20">
+    <div class="grid md:grid-cols-5 gap-10">
+      <div class="md:col-span-3">
+        <h2 class="text-2xl md:text-3xl font-bold">About</h2>
+        <p class="mt-4 text-white/70 leading-relaxed">I’m Ferrari Glenn (Rari) — a creative technologist in Houston who builds playful systems: LED controllers, audio tooling, interactive art, and research. I like clean UI, tight loops, and ideas that remix disciplines.</p>
+        <p class="mt-3 text-white/60 text-sm">Into: AMD GPUs, WLED, real-time graphics, roguelikes, and clever design systems. When not soldering, I’m probably writing or analyzing AI futures.</p>
+      </div>
+      <aside class="md:col-span-2 bg-white/5 border border-white/10 rounded-3xl p-5">
+        <h3 class="font-semibold">Now Playing / Using</h3>
+        <ul class="mt-3 space-y-2 text-sm text-white/70">
+          <li>🖥️ RX 7900 XT • i9‑14900KF • DDR5</li>
+          <li>🎚️ Lewitt LCT 441 FLEX • FL Studio</li>
+          <li>🧪 ESP32 • WLED Segments ×8</li>
+          <li>🎮 Death Stranding DC • Tekken 8</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="max-w-6xl mx-auto px-4 py-20">
+    <div class="rounded-3xl border border-white/10 bg-white/5 p-8 md:p-10">
+      <h2 class="text-2xl md:text-3xl font-bold">Let’s build something</h2>
+      <p class="mt-2 text-white/70">For collabs, commissions, or consulting.</p>
+      <form class="mt-6 grid md:grid-cols-3 gap-4" action="https://formspree.io/f/your-form-id" method="POST">
+        <input required name="name" placeholder="Your name" class="col-span-3 md:col-span-1 px-4 py-3 rounded-2xl bg-neutral-900 border border-white/10 outline-none focus:border-sky-400/50" />
+        <input required type="email" name="email" placeholder="Email" class="col-span-3 md:col-span-1 px-4 py-3 rounded-2xl bg-neutral-900 border border-white/10 outline-none focus:border-sky-400/50" />
+        <input name="subject" placeholder="Subject" class="col-span-3 md:col-span-1 px-4 py-3 rounded-2xl bg-neutral-900 border border-white/10 outline-none focus:border-sky-400/50" />
+        <textarea required name="message" placeholder="Message" rows="4" class="col-span-3 px-4 py-3 rounded-2xl bg-neutral-900 border border-white/10 outline-none focus:border-sky-400/50"></textarea>
+        <button class="col-span-3 inline-flex justify-center items-center gap-2 px-5 py-3 rounded-2xl bg-sky-500/20 border border-sky-400/30 hover:bg-sky-500/30">Send</button>
+      </form>
+      <div class="mt-4 text-sm text-white/50">Or email <a class="underline hover:text-white" href="mailto:hello@ferrariglenn.com">hello@ferrariglenn.com</a></div>
+    </div>
+  </section>
+
+  <footer class="border-t border-white/5 py-10">
+    <div class="max-w-6xl mx-auto px-4 text-sm text-white/50 flex flex-col md:flex-row gap-2 justify-between">
+      <div>© <span id="year"></span> Ferrari Glenn. All rights reserved.</div>
+      <div class="flex gap-4">
+        <a href="#" class="hover:text-white">GitHub</a>
+        <a href="#" class="hover:text-white">YouTube</a>
+        <a href="#" class="hover:text-white">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
